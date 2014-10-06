@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ControlPT2.exe" version="1.0.0.0" publicKeyToken="21dff218c743999d" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ControlPT2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ControlPT2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opciones del manifiesto de Control de cuentas de usuario
+             Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+             nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            La especificación del nodo requestedExecutionLevel deshabilitará la virtualización de archivos y del Registro.
+            Si desea usar la virtualización de archivos y del Registro para la compatibilidad 
+            con versiones anteriores, elimine el nodo requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ControlPT2.exe" size="121344">
+      <assemblyIdentity name="ControlPT2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>45aFxoTVTO0G076aqZWgGSY8cQs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ControlPT2.exe.config" size="1407">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4uDU3fShD8stU9SQObubmuXC/Wc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Lista de todas las versiones de Windows con las que esta aplicación está diseñada para funcionar. 
+      Windows seleccionará automáticamente el entorno de mayor compatibilidad.-->
+      <!-- Si la aplicación está diseñada para funcionar con Windows Vista, quite los comentarios del siguiente nodo supportedOS-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- Si la aplicación está diseñada para funcionar con Windows 7, quite los comentarios del siguiente nodo supportedOS-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- Si la aplicación está diseñada para funcionar con Windows 8, quite los comentarios del siguiente nodo supportedOS-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=AGRICOLAGARCES\azuniga" issuerKeyHash="de0191b1ea916712b2a562aca166e6565b317913" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>80HfbKsV8N6i5RKc2RXnS+B3pfk=</DigestValue></Reference></SignedInfo><SignatureValue>onyZgF5aXp9pGT7VuOhQzBG3RWPdcmDRr3WJPVkiYuBQGshyhlvInc3bsrqjW/jvSjQxaxgOnEe6r26KdZwbSDHPHMFeWEYT+1xk8NZTX756qcE88yVnGu7qEQ3KbpDc5T6ZsLKGNgLWq/v0twztspbEo/wd33oWRwqJjzS+FmI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pSd7ilealHBcjd1OOrVU9X3wGj5N8pAJhP3gAjJBUCIqjQtsD1U2Db7RJqB5Ia3NV4CQyNUMjZ66DGOsFPBerLCJjNlOVQf6lMiE3zYmcD+RNfvFR4aa4Fe/d9gK50B4RsqO/sx1w2pLXZ5o18LVeVkSBArL1yUhk+bogOWfi60=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f9a577e04be715d99c12e5a2def015ab6cdf41f3" Description="" Url=""><as:assemblyIdentity name="ControlPT2.exe" version="1.0.0.0" publicKeyToken="21dff218c743999d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AGRICOLAGARCES\azuniga</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>QjIYkSsJaZqXv/yjVRgYdQpAld0=</DigestValue></Reference></SignedInfo><SignatureValue>AvHMklW2fONwIldCZ4gOX2ua39yeisMBKL/+15/eIYCirrm5Rsba+qom/bjv/QSEf1tSaYaBD68SzQxsb8yL7iJU1GRBDz6uyGArOIVsePf+eqLVIJugjFULajKKeWp0WIoxmOAdBG0mr1hNghfsw5WxW6mdhrFixt9dYflczXs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pSd7ilealHBcjd1OOrVU9X3wGj5N8pAJhP3gAjJBUCIqjQtsD1U2Db7RJqB5Ia3NV4CQyNUMjZ66DGOsFPBerLCJjNlOVQf6lMiE3zYmcD+RNfvFR4aa4Fe/d9gK50B4RsqO/sx1w2pLXZ5o18LVeVkSBArL1yUhk+bogOWfi60=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQEXeGyz/LNaZDuBbUuO2JJTANBgkqhkiG9w0BAQUFADA3MTUwMwYDVQQDHiwAQQBHAFIASQBDAE8ATABBAEcAQQBSAEMARQBTAFwAYQB6AHUAbgBpAGcAYTAeFw0xMzExMjExODIxMDBaFw0xNDExMjIwMDIxMDBaMDcxNTAzBgNVBAMeLABBAEcAUgBJAEMATwBMAEEARwBBAFIAQwBFAFMAXABhAHoAdQBuAGkAZwBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClJ3uKV5qUcFyN3U46tVT1ffAaPk3ykAmE/eACMkFQIiqNC2wPVTYNvtEmoHkhrc1XgJDI1QyNnroMY6wU8F6ssImM2U5VB/qUyITfNiZwP5E1+8VHhprgV7932ArnQHhGyo7+zHXDaktdnmjXwtV5WRIECsvXJSGT5uiA5Z+LrQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAJQKdRYn284ZFrzgjyMsmwW2JVHhIeNLayFzHxCC134fJ2BjrahxTK15F+QgpikEunDmITBK+/xezk34D2HoS071LgSiaKKJP77D4UCBEOHFyoEO94kTD4U8TMw/oY2OypaGM8ofGulyaeURYj+z1rGGgUFuRWu9vl8qjy83uNDf</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
