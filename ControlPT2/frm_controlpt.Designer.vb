@@ -22,6 +22,7 @@ Partial Class frm_controlpt
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_controlpt))
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.txtdefparcic = New System.Windows.Forms.TextBox()
         Me.Label57 = New System.Windows.Forms.Label()
@@ -1373,6 +1374,7 @@ Partial Class frm_controlpt
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtcodbarra)
         Me.Controls.Add(Me.Label5)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_controlpt"
         Me.Text = "Control Producto Terminado -  CC-PAC-005"
         Me.GroupBox3.ResumeLayout(False)

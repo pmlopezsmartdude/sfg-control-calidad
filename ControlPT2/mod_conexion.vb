@@ -10,7 +10,7 @@ Module mod_conexion
 
     Public Sub Conectarbd()
         Try
-            Conexion = New SqlConnection("Data Source=uvas.sfg.cl\SQL_SERVER,55555;Initial Catalog=CONTROLPT;Integrated Security=false;uid=usercontrolpt;pwd=$Control03;")
+            Conexion = New SqlConnection("Data Source=CHLWCT01AP01\SQLEXPRESS,1433;Initial Catalog=CONTROLPT;Integrated Security=false;uid=usercontrolpt;pwd=$Control03;")
             Conexion.Open()
 
         Catch oExcep As SqlException

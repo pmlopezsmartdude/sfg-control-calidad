@@ -24,6 +24,7 @@ Partial Class frm_principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_principal))
         Me.Menuprincipal = New System.Windows.Forms.MenuStrip()
         Me.mnulogin = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
@@ -41,6 +42,7 @@ Partial Class frm_principal
         Me.bar_usuario = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Menuprincipal.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -79,7 +81,7 @@ Partial Class frm_principal
         '
         'mnuEntrada
         '
-        Me.mnuEntrada.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ControlProductoTerminadoToolStripMenuItem, Me.ToolStripMenuItem2})
+        Me.mnuEntrada.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ControlProductoTerminadoToolStripMenuItem, Me.ToolStripMenuItem2, Me.SalirToolStripMenuItem})
         Me.mnuEntrada.Name = "mnuEntrada"
         Me.mnuEntrada.Size = New System.Drawing.Size(108, 20)
         Me.mnuEntrada.Text = "&Entrada de Datos"
@@ -147,6 +149,12 @@ Partial Class frm_principal
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(617, 17)
         Me.ToolStripStatusLabel1.Spring = True
         '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.SalirToolStripMenuItem.Text = "Salir"
+        '
         'frm_principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -154,6 +162,7 @@ Partial Class frm_principal
         Me.ClientSize = New System.Drawing.Size(632, 453)
         Me.Controls.Add(Me.Menuprincipal)
         Me.Controls.Add(Me.StatusStrip)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.Menuprincipal
         Me.Name = "frm_principal"
@@ -185,5 +194,6 @@ Partial Class frm_principal
     Friend WithEvents ToolStripMenuItem3 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents InicioSesiónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem4 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
