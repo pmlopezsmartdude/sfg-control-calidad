@@ -18,10 +18,10 @@ Public Class frm_controlpt
 
 
         If vplacodigo = "01" Then
-            conexion_unitec.ConnectionString = "Data Source=CRONOS;Initial Catalog=LotManager;Integrated Security=false;uid=LotManager;pwd=lotmanager;"
+            conexion_unitec.ConnectionString = "Data Source=192.168.1.140;Initial Catalog=LotManager01;Integrated Security=false;uid=usercontrolpt;pwd=$Control03;"
         Else
             If vplacodigo = "02" Then
-                conexion_unitec.ConnectionString = "Data Source=192.168.10.230;Initial Catalog=LotManager;Integrated Security=false;uid=LotManager;pwd=lotmanager;"
+                conexion_unitec.ConnectionString = "Data Source=192.168.1.140;Initial Catalog=LotManager40;Integrated Security=false;uid=usercontrolpt;pwd=$Control03;"
             End If
         End If
 
