@@ -36,5 +36,20 @@
             Favor tome contacto con el Area de informática y solicite instrucciones para continuar, esto se puede
             deber a que no se ha volcado la información del proceso desde Lotmanager al sistema.
         </li>
+        <asp:LoginView runat="server" ViewStateMode="Disabled">
+            <AnonymousTemplate>
+                <li class="four">
+                    <h5>Acceso a las aplicaciones de Control de Producto Terminado</h5>
+                    El acceso a las aplicaciones de control de producto terminado esta solo permitido para usuarios autenticados
+                    Por favor ingrese con su cuenta de usuario para permitirle el acceso.
+                </li>
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                <li class="four">
+                    <h5>Acceso a las aplicaciones de Control de Producto Terminado</h5>
+                    <a runat="server" href="~/SisConPT/SisConPT.aspx">Aplicaciones de sistema de control de producto terminado.</a>
+                </li>
+            </LoggedInTemplate>
+        </asp:LoginView>
     </ol>
 </asp:Content>

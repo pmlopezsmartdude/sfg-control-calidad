@@ -25,17 +25,17 @@
                             <asp:TextBox runat="server" ID="Password" TextMode="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="El campo de contraseña es obligatorio." />
                         </li>
-                        <li>
+                        <!-- <li>
                             <asp:Label runat="server" AssociatedControlID="Plantas">Planta</asp:Label>
-                            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="Plantas" DataTextField="pladescri" DataValueField="pladescri" Height="30px" Width="310px">
+                            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="Plantas" DataTextField="pladescri" DataValueField="pladescri" Height="30px" Width="310px" Font-Names="Century Gothic">
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="Plantas" runat="server" ConnectionString="<%$ ConnectionStrings:CONTROLPTConnectionString %>" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [pladescri] FROM [planta]"></asp:SqlDataSource>
 
-                        </li>
+                        </li> 
                         <li>
                             <asp:CheckBox runat="server" ID="RememberMe" />
                             <asp:Label runat="server" AssociatedControlID="RememberMe" CssClass="checkbox">¿Recordar cuenta?</asp:Label>
-                        </li>
+                        </li> -->
                     </ol>
                     <asp:Button runat="server" CommandName="Login" Text="Iniciar sesión" />
                 </fieldset>

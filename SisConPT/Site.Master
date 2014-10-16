@@ -63,13 +63,27 @@
                         </LoggedInTemplate>
                     </asp:LoginView>
                 </section>
-                <nav>
-                    <ul id="menu">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <!-- <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li> -->
-                    </ul>
-                </nav>
+                <section id="menudefault">
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                                <nav>
+                                    <ul id="menu">
+                                        <li><a runat="server" href="~/">Inicio</a></li>
+                                        <!-- <li><a runat="server" href="~/About">Acerca de</a></li>
+                                        <li><a runat="server" href="~/Contact">Contacto</a></li> -->
+                                    </ul>
+                                </nav>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                                <nav>
+                                    <ul id="menu">
+                                        <li><a runat="server" href="~/">Inicio</a></li>
+                                        <li><a runat="server" href="~/SisConPT/SisConPT.aspx">Aplicaciones Sitema</a></li>
+                                    </ul>
+                                </nav>
+                        </LoggedInTemplate>
+                </asp:LoginView>
+                </section>
             </div>
         </div>
     </header>

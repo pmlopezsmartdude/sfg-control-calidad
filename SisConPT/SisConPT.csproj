@@ -246,6 +246,37 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SisConPT\Images\accent.png" />
+    <Content Include="SisConPT\Images\bullet.png" />
+    <Content Include="SisConPT\Images\heroAccent.png" />
+    <Content Include="SisConPT\Images\logosfg.png" />
+    <Content Include="SisConPT\Images\orderedList0.png" />
+    <Content Include="SisConPT\Images\orderedList1.png" />
+    <Content Include="SisConPT\Images\orderedList2.png" />
+    <Content Include="SisConPT\Images\orderedList3.png" />
+    <Content Include="SisConPT\Images\orderedList4.png" />
+    <Content Include="SisConPT\Images\orderedList5.png" />
+    <Content Include="SisConPT\Images\orderedList6.png" />
+    <Content Include="SisConPT\Images\orderedList7.png" />
+    <Content Include="SisConPT\Images\orderedList8.png" />
+    <Content Include="SisConPT\Images\orderedList9.png" />
+    <Content Include="SisConPT\SisConPT.aspx" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -253,6 +284,7 @@
   <ItemGroup>
     <None Include="Scripts\_references.js" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="SisConPT\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -324,6 +356,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SisConPT\SisConPT.aspx.cs">
+      <DependentUpon>SisConPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SisConPT\SisConPT.aspx.designer.cs">
+      <DependentUpon>SisConPT.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
