@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SisConPT")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hewlett-Packard")]
+[assembly: AssemblyCompany("WTC Consultores Ltda.")]
 [assembly: AssemblyProduct("SisConPT")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2014")]
+[assembly: AssemblyCopyright("Copyright © WTC Consultores Ltda. 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

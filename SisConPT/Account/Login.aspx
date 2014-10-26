@@ -37,7 +37,7 @@
                             <asp:Label runat="server" AssociatedControlID="RememberMe" CssClass="checkbox">¿Recordar cuenta?</asp:Label>
                         </li> -->
                     </ol>
-                    <asp:Button runat="server" CommandName="Login" Text="Iniciar sesión" />
+                    <asp:Button runat="server" CommandName="Login" VerticalAlign="Middle" Font-Names="Century Gothic" Font-size="Smaller" Text="Iniciar sesión" />
                 </fieldset>
             </LayoutTemplate>
         </asp:Login>

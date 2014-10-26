@@ -10,7 +10,7 @@
    <ol>
         <li>
         <asp:Label runat="server" AssociatedControlID="Plantas">Planta</asp:Label>
-        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="Plantas" DataTextField="pladescri" DataValueField="pladescri" Height="30px" Width="310px" Font-Names="Century Gothic">
+        <asp:DropDownList ID="DropDownList1" name="DropDownList1" runat="server" DataSourceID="Plantas" DataTextField="pladescri" DataValueField="pladescri" Height="30px" Width="310px" Font-Names="Century Gothic">
         </asp:DropDownList>
             <asp:SqlDataSource ID="Plantas" runat="server" ConnectionString="<%$ ConnectionStrings:CONTROLPTConnectionString %>" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [pladescri] FROM [planta]"></asp:SqlDataSource>
         </li>
@@ -18,31 +18,27 @@
         </fieldset>
     <fieldset>
         <legend>Menu aplicaciones</legend>
-        <ol>
-            <li>
+        <asp:Table ID="Aplicaciones" runat="server" BorderColor="Black" BorderStyle="Solid" Font-Names="Century Gothic" Height="74px" Width="966px">
+            <asp:TableRow runat="server" BorderColor="Black" BorderStyle="Solid" HorizontalAlign="Center" VerticalAlign="Middle">
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">Carga de Planillas Por proceso</asp:TableCell>
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">Carga de Planillas por Código de caja</asp:TableCell>
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">Consulta de planillas por proceso</asp:TableCell>
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">Consulta de planillas por Códgo de caja</asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow runat="server" BorderColor="Black" BorderStyle="Solid" HorizontalAlign="Center" VerticalAlign="Middle">
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">
+                    <asp:Button ID="CCPAC05PP" runat="server" Text="CC-PAC-05 por proceso" />
+                </asp:TableCell>
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">
+                    <asp:Button ID="CCPAC05PCC" runat="server" onclick="Button2_Click" Text="CC-PAC-05 por Código de caja"  />
+                </asp:TableCell>
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">
+                    <asp:Button ID="Consporproceso" runat="server" Text="CC-PAC-05 por Proceso" /></asp:TableCell>
+                <asp:TableCell runat="server" BorderColor="Black" BorderStyle="Solid">
+                    <asp:Button ID="Consporcodcaja" runat="server" Text="CC-PAC-05 por Código de caja" />
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
 
-                <asp:TreeView ID="TreeView1" runat="server" LineImagesFolder="~/TreeLineImages" ShowLines="True">
-                    <Nodes>
-                        <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Carga de datos" Value="Carga de datos">
-                            <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Por Numero  de Proceso" Value="Por Numero  de Proceso">
-                                <asp:TreeNode Text="CC-PAC-005" Value="CC-PAC-005"></asp:TreeNode>
-                            </asp:TreeNode>
-                            <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Por Codigo de Caja" Value="Por Codigo de Caja">
-                                <asp:TreeNode Text="CC-PAC-005" Value="CC-PAC-005"></asp:TreeNode>
-                            </asp:TreeNode>
-                        </asp:TreeNode>
-                        <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Consulta de Datos" Value="Consulta de Datos">
-                            <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Por numero de Proceso" Value="Por numero de Proceso">
-                                <asp:TreeNode Text="CC-PAC-005" Value="CC-PAC-005"></asp:TreeNode>
-                            </asp:TreeNode>
-                            <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Por Numero de Caja" Value="Por Numero de Caja">
-                                <asp:TreeNode Text="CC-PAC-005" Value="CC-PAC-005"></asp:TreeNode>
-                            </asp:TreeNode>
-                        </asp:TreeNode>
-                    </Nodes>
-                </asp:TreeView>
-
-            </li>
-        </ol>
     </fieldset>
 </asp:Content>
